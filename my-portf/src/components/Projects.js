@@ -18,7 +18,7 @@ export const Projects = () => {
       title: "Faucet & Staking Platform",
       description: "Solidity + React.js + Ethers",
       imgUrl: projImg1,
-      href: "https://sample-waitlist.vercel.app/",
+      href: "https://sample-staking.vercel.app/",
     },
     {
       title: "dApp tnx with message",
