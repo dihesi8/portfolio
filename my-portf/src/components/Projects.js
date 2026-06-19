@@ -61,7 +61,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Shipping components, crafting pixels, and pushing the boundaries of what’s possible on-code. Below are the websites and design systems I’ve built using different language and a deep love for clean UI. I focus on turning complex technical constraints into seamless user journeys.</p>
+                <p>Below are the websites and design systems I’ve built using different language and a deep love for clean UI.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
