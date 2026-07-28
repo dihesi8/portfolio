@@ -46,12 +46,12 @@ export const Skills = () => {
                                 <h5>Solidity</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Graphic Design</h5>
+                                <img src={meter1} alt="Image" />
+                                <h5>Rust & solana</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>UI/UX Design</h5>
+                                <img src={meter1} alt="Image" />
+                                <h5>AI Agents</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
@@ -59,7 +59,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>AI Agents</h5>
+                                <h5>Blockchain</h5>
                             </div>
                         </Carousel>
                     </div>
