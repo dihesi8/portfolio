@@ -38,27 +38,27 @@ export const Skills = () => {
                         <p><br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" loading="lazy" decoding="async" />
                                 <h5>Javascript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" loading="lazy" decoding="async" />
                                 <h5>Solidity</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" loading="lazy" decoding="async" />
                                 <h5>Rust & solana</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" loading="lazy" decoding="async" />
                                 <h5>AI Agents</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" loading="lazy" decoding="async" />
                                 <h5>NODE js</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" loading="lazy" decoding="async" />
                                 <h5>Blockchain</h5>
                             </div>
                         </Carousel>
@@ -66,7 +66,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="" loading="lazy" decoding="async" />
     </section>
   )
 }

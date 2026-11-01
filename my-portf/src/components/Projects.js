@@ -1,16 +1,23 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
-import projImg7 from "../assets/img/project-img7.png";
-import projImg8 from "../assets/img/project-img8.png";
-import projImg9 from "../assets/img/project-img9.png";
-import projImg10 from "../assets/img/project-img10.png";
-import projImg11 from "../assets/img/project-img11.png";
+import projImg1 from "../assets/img/project-img1.jpg";
+import projImg2 from "../assets/img/project-img2.jpg";
+import projImg3 from "../assets/img/project-img3.jpg";
+import projImg4 from "../assets/img/project-img4.jpg";
+import projImg5 from "../assets/img/project-img5.jpg";
+import projImg6 from "../assets/img/project-img6.jpg";
+import projImg7 from "../assets/img/project-img7.jpg";
+import projImg8 from "../assets/img/project-img8.jpg";
+import projImg10 from "../assets/img/project-img10.jpg";
+import projImg11 from "../assets/img/project-img11.jpg";
+import projImg14 from "../assets/img/project-img14.jpg";
+import projImg13 from "../assets/img/project-img13.jpg";
+import projImg15 from "../assets/img/project-img15.jpg";
+import projImg16 from "../assets/img/project-img16.jpg";
+import projImg17 from "../assets/img/project-img17.jpg";
+import projImg18 from "../assets/img/project-img18.jpg";
+import projImg19 from "../assets/img/project-img19.jpg";
+import projImg20 from "../assets/img/project-img20.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -19,6 +26,46 @@ export const Projects = () => {
 
   const projects = [
     {
+      
+      title: "AutoX",
+      description: "Learns your voice to research, draft, review, and schedule posts for X, LinkedIn, and Farcaster.",
+      imgUrl: projImg14,
+      href: "https://autox.dihesi8.workers.dev/",
+    },
+    {
+      title: "MARS Compute Network",
+      description: "Agent compute network concept for workload routing, node matching, result verification, and on-chain settlement.",
+      imgUrl: projImg18,
+      href: "https://mars-nu-ruddy.vercel.app/",
+    },
+    {
+      title: "Savanna Fi",
+      description: "Algorithmic gold protocol concept on Robinhood Chain, with SVN, MSHARE, MBOND, and tokenized-stock staking pools.",
+      imgUrl: projImg17,
+      href: "https://savanna-fi.vercel.app/",
+    },
+    {
+      title: "Bountify",
+      description: "Arc bounty marketplace concept with upfront USDC escrow, contributor applications, review, and on-chain payouts.",
+      imgUrl: projImg13,
+      href: "https://bountify-chi.vercel.app/",
+    },
+    {
+      title: "CookiePredict",
+      description: "YES/NO prediction markets on Cookie Chain with on-chain trade settlement through Nightly.",
+      imgUrl: projImg16,
+      href: "https://cookiepredict.vercel.app/",
+    },
+    {
+      title: "Solpay",
+      description: "Solana pay links for digital products with on-chain USDC verification and gated file delivery.",
+      imgUrl: projImg15,
+      href: "https://solpay-one-zeta.vercel.app/",
+    },
+  ];
+
+const projects1 = [
+        {
       
       title: "Faucet & Staking Platform",
       description: "Solidity + React.js + Ethers",
@@ -32,10 +79,10 @@ export const Projects = () => {
       href: "https://dapp-msg.vercel.app/",
     },
     {
-      title: "Waitlist Dashboard",
-      description: "Supabased Backend",
-      imgUrl: projImg3,
-      href: "https://sample-waitlist.vercel.app/",
+      title: "ZK ballot",
+      description: "ZK Proof of Concept",
+      imgUrl: projImg20,
+      href: "https://zk-ballot-ten.vercel.app/",
     },
     {
       title: "Sol Scout",
@@ -50,14 +97,14 @@ export const Projects = () => {
       href: "https://agent-be.vercel.app/",
     },
     {
-      title: "Blink and buy",
-      description: "Create solana link to sell your e-product",
-      imgUrl: projImg9,
-      href: "https://blink-and-buy.vercel.app/",
+      title: "Deaptrace AI",
+      description: "LIquidity Tracker",
+      imgUrl: projImg19,
+      href: "https://deeptraceai-zeta.vercel.app/",
     },
   ];
 
-const projects1 = [
+  const projects2 = [
     {
       
       title: "landing page",
@@ -97,6 +144,7 @@ const projects1 = [
     },
   ];
 
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -105,18 +153,18 @@ const projects1 = [
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Demo Projects</h2>
-                <p>Below are some projects and design systems i’ve built.</p>
+                <h2>Selected Projects</h2>
+                <p>A selection of blockchain, AI, and full-stack products I’ve built. Open a demo to explore each project.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">AI &amp; Web3</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Blockchain Apps</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Web &amp; UI</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -151,7 +199,7 @@ const projects1 = [
                     <Tab.Pane eventKey="third">
                        <Row>
                         {
-                          projects.map((project, index) => {
+                          projects2.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -169,7 +217,7 @@ const projects1 = [
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="" loading="lazy" decoding="async" />
     </section>
   )
 }

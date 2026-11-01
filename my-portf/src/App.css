@@ -3,16 +3,19 @@
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
 	font-weight: 700;
+	font-display: swap;
 }
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Medium.ttf');
 	font-weight: 500;
+	font-display: swap;
 }
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
+	font-display: swap;
 }
 
 /************ Default Css ************/
@@ -234,7 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg1.png');
+	background-image: url('./assets/img/banner-bg1-optimized.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,7 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner .connect-cta {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -273,14 +276,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.banner .connect-cta svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner .connect-cta:hover svg,
+.banner .connect-cta:focus-visible svg {
   margin-left: 25px;
+}
+.banner .connect-cta:focus-visible,
+.proj-link a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
 }
 .banner img {
   animation: updown 3s linear infinite;
@@ -441,9 +450,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx {
+.proj-imgbx:hover .proj-txtx,
+.proj-imgbx:focus-within .proj-txtx {
   top: 50%;
   opacity: 1;
+}
+.proj-imgbx:focus-within::before {
+  height: 100%;
 }
 .proj-txtx h4 {
   font-size: 30px;
@@ -456,6 +469,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+.proj-link {
+  margin-top: 15px;
+}
+.proj-link a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 8px 4px;
+}
+@media (max-width: 767px) {
+  .banner {
+    padding: 180px 0 80px;
+  }
+  .banner h1 {
+    font-size: clamp(36px, 10vw, 54px);
+    line-height: 1.1;
+  }
+  .project .nav.nav-pills {
+    width: 100%;
+  }
+  .project .nav.nav-pills .nav-link {
+    padding: 14px 8px;
+    font-size: 14px;
+  }
+  .proj-imgbx::before {
+    display: none;
+  }
+  .proj-txtx,
+  .proj-imgbx:hover .proj-txtx,
+  .proj-imgbx:focus-within .proj-txtx {
+    position: static;
+    width: 100%;
+    padding: 18px 20px;
+    transform: none;
+    opacity: 1;
+    text-align: left;
+    background: #151515;
+  }
+  .proj-txtx h4 {
+    font-size: 22px;
+  }
 }
 .background-image-right {
   top: 20%;
